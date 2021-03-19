@@ -1,21 +1,48 @@
 *{
     padding: 0;
     margin: 0;
+    color: white;
 }
 nav {
     position: fixed;
-    height: 100px;
+    height: 80px;
     width: 100%;
-    background-color: violet;
+    background-color: #441481;
 }
 #welcome-section {
     height: 100vh;
+    background-color: #7000ad;
+}
+h1 {
+    position: relative;
+    bottom: -400px;
+    text-align: center;
+    font-size: 7em;
+}
+p{
+    text-align: center;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+#projects-tile {
+    width: 100px;
+    height: 300px;
 }
 #projects {
-
+    background-color: #055e6c;
+    height: 100vh;
 }
 #contact {
-    
+    background-color: #036043;
+    height: 50vh;
+
 }
 
 @media (max-width: 700px) {
