@@ -40,7 +40,7 @@ p {
 }
 #projects {
     background-color: #055e6c;
-    height: 150vh;
+    height: 120vh;
 }
 #contact {
     background-color: #036043;
@@ -54,7 +54,7 @@ p {
     flex-direction: column;
 }
 h2 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     padding: 120px 10px 10px 10px;
 }
@@ -64,8 +64,15 @@ h2 {
 }
 .links-container {
     text-align: center;
+    font-size: 2em;
+}
+#contact a {
+    padding: 20px;
 }
 
 @media (max-width: 700px) {
-
+    .projects-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
 }
