@@ -2,47 +2,68 @@
     padding: 0;
     margin: 0;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav {
     position: fixed;
     height: 80px;
     width: 100%;
     background-color: #441481;
+    text-align: end;
 }
 #welcome-section {
     height: 100vh;
     background-color: #7000ad;
 }
 h1 {
-    position: relative;
-    bottom: -400px;
     text-align: center;
     font-size: 7em;
 }
-p{
+p {
     text-align: center;
 }
 .projects-grid {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     justify-content: space-around;
+    grid-gap: 40px;
+    margin: 0 auto;
+    width: 1000px;
+    
+    
 }
-#projects-tile {
-    width: 100px;
-    height: 300px;
+.project-tile {
+    width: 500px;
+    height: 450px;
+    background-color: #202020 ;
 }
 #projects {
     background-color: #055e6c;
-    height: 100vh;
+    height: 150vh;
 }
 #contact {
     background-color: #036043;
-    height: 50vh;
+    height: 100vh;
 
+}
+.welcome-header {
+    position: relative;
+    bottom: -400px;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 120px 10px 10px 10px;
+}
+#projects img {
+    width: 100%;
+    height: 90%;
+}
+.links-container {
+    text-align: center;
 }
 
 @media (max-width: 700px) {
